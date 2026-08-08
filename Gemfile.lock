@@ -58,9 +58,9 @@ GEM
       timeout (>= 0.4.0)
     activerecord-jdbc-adapter (72.1-java)
       activerecord (~> 7.2.2)
-    activerecord-jdbcmysql-adapter (72.1-java)
+    activerecord-jdbcsqlite3-adapter (72.1-java)
       activerecord-jdbc-adapter (= 72.1)
-      jdbc-mysql (>= 5.1.36, < 9)
+      jdbc-sqlite3 (~> 3.8, < 4)
     activestorage (7.2.3.2)
       actionpack (= 7.2.3.2)
       activejob (= 7.2.3.2)
@@ -126,7 +126,7 @@ GEM
     jbuilder (2.15.1)
       actionview (>= 7.0.0)
       activesupport (>= 7.0.0)
-    jdbc-mysql (8.4.0.1)
+    jdbc-sqlite3 (3.46.1.1)
     json (2.21.2-java)
     language_server-protocol (3.17.0.6)
     lint_roller (1.1.0)
@@ -303,14 +303,14 @@ PLATFORMS
   universal-java
 
 DEPENDENCIES
-  activerecord-jdbcmysql-adapter (= 72.1)
+  activerecord-jdbcsqlite3-adapter (= 72.1)
   bootsnap
   brakeman
   capybara
   debug
   importmap-rails
   jbuilder
-  jdbc-mysql (= 8.4.0.1)
+  jdbc-sqlite3 (= 3.46.1.1)
   puma (>= 5.0)
   rails (~> 7.2.3, >= 7.2.3.2)
   rubocop-rails-omakase
@@ -332,7 +332,7 @@ CHECKSUMS
   activemodel (7.2.3.2) sha256=3777c67cd8dd1560f30387523013dacb370a0a1cf532037410887819e4416927
   activerecord (7.2.3.2) sha256=e62d24ba7e5f820d24ed122eb9225491b0aaa8398778783b400067c3467285c7
   activerecord-jdbc-adapter (72.1-java) sha256=4487cb4606b5d76913b5abaaf681ef21b7aa9478ed201918f48da6b3f7fcec70
-  activerecord-jdbcmysql-adapter (72.1-java) sha256=094d6e074e23668dff143f5c69cda0f0fc29468d9634b3c5e5884a3345e3d166
+  activerecord-jdbcsqlite3-adapter (72.1-java) sha256=f0b2c95c02b32cf6d7887580b7e2a2c79bdb4ff2a10151d5fc650a70cf75f8cd
   activestorage (7.2.3.2) sha256=863cb4b21b83505555be2addb939fefb856ab05f6c6d24bab00d6f1a7e4edbfc
   activesupport (7.2.3.2) sha256=ddc90d11dd88086d78ace03407fe3c2a3f5c8853c3c3046313db5ed823ef3312
   addressable (2.9.0) sha256=7fdf6ac3660f7f4e867a0838be3f6cf722ace541dd97767fa42bc6cfa980c7af
@@ -360,7 +360,7 @@ CHECKSUMS
   irb (1.18.0) sha256=de9454a0703a54704b9811a5ef31a60c86949fbf4013fcf244fabc7c775248e3
   jar-dependencies (0.5.7) sha256=013ce5f4639414ac8cf1169cdbe763da164b81e2d2c983d11042b5ff7bfcce80
   jbuilder (2.15.1) sha256=2430bec28fb0cebacb5875b1009cf9d8bc3c303ccb810c4c8b062a4b51457637
-  jdbc-mysql (8.4.0.1) sha256=429cb7999d11c4f46a7153a382b6ac07935a4c10ddc52dd98e2d52b22c17fa13
+  jdbc-sqlite3 (3.46.1.1) sha256=2498fea7d37c0d51c6bad1b95ffc909173c014ba6bd36825f37910113d0230cf
   json (2.21.2-java) sha256=f01521cd90639cc26b63040fb00d2b949f18f41ecaab5c82b02fb31d0b8b736c
   language_server-protocol (3.17.0.6) sha256=5ef2c0c138f8267e1bc631d3328347d354f96724b0af22f2c79516120443b7f0
   lint_roller (1.1.0) sha256=2c0c845b632a7d172cb849cc90c1bce937a28c5c8ccccb50dfd46a485003cc87

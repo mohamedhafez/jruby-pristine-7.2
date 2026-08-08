@@ -4,8 +4,8 @@ source "https://rubygems.org"
 gem "rails", "~> 7.2.3", ">= 7.2.3.2"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
-gem 'activerecord-jdbcmysql-adapter', '= 72.1'
-gem 'jdbc-mysql', '= 8.4.0.1'
+gem "activerecord-jdbcsqlite3-adapter", "= 72.1"
+gem "jdbc-sqlite3", "= 3.46.1.1"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
